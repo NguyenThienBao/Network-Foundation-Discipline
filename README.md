@@ -1,2 +1,9 @@
 # Network-Foundation-Discipline
-This repository is for learning about networking theory, basics, and working on self discipline for software engineer workflow.
+
+## Sources
+### 1.Networking
+**NetworkLessons** - https://networklessons.com/network-fundamentals
+
+### 2.Linux & Bash — Your MAIN source
+**LinuxCommand.org** - http://linuxcommand.org
+

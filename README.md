@@ -1,6 +1,6 @@
 # Network-Foundation-Discipline
 
-- Best approach is to learn theory and quickly move on to some exercises or tutorials to get used to command-line practice.
+- Best approach is to learn theory and quickly move on to some exercises or tutorials to get used to command-line practice. In this phase, i will focus on making a habit of tracking, journaling, using github and markdown, in addition with learning about Networking Fundamentals, Using Linux & Bash, Javascript, and NextJS. With English as supplyment when i get used to the routine.
 
 ## Sources
 
@@ -38,7 +38,17 @@ Progress:
 - https://www.geeksforgeeks.org/javascript/practice-javascript-online/  
 Progress: 
 
-### 4. Github
+### 4. NextJS
+
+**NextJS Official Website**
+- https://nextjs.org/docs.  
+Progress: 
+
+**React Official Website**
+- https://react.dev/reference/react  
+Progress:
+
+### 5. Github
 
 **Youtube Video**
 - https://youtu.be/pJYOG6klqj8?si=nC3dATvEpxedLadS  

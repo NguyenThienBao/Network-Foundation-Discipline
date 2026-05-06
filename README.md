@@ -6,51 +6,39 @@
 
 ### 0. General Resources
 
-**Markdown Guide**
-- https://www.markdownguide.org/basic-syntax/
+**[Markdown Guide](https://www.markdownguide.org/basic-syntax/)**
 
-**Github Commits Convention**
-- https://www.conventionalcommits.org/en/v1.0.0/
+**[Github Commits Convention](https://www.conventionalcommits.org/en/v1.0.0/)**
 
 ### 1. Networking
 
-**NetworkLessons**
-- https://networklessons.com/network-fundamentals  
-Progress: 
+**[NetworkLessons](https://networklessons.com/network-fundamentals)** - 
 
-**Youtube - Networking Fundamentals**
-- https://www.reddit.com/r/CompTIA/comments/o5s27p/ten_videos_to_teach_you_networking_free_on_youtube/  
-Progress: Lesson 2B - 7 Layers of Network
+**[Youtube - Networking Fundamentals](https://www.reddit.com/r/CompTIA/comments/o5s27p/ten_videos_to_teach_you_networking_free_on_youtube/)** - Lesson 2B - 7 Layers of Network
 
 ### 2. Linux & Bash — Your MAIN source
 
-**LinuxCommand.org** 
-- http://linuxcommand.org  
-Progress: 
+**[LinuxCommand.org](http://linuxcommand.org)** - 
 
 ### 3. Javascript
 
-**Quick Review**
-- https://www.youtube.com/watch?v=m0FJhTVC658  
-Progress: 
+**[Youtube - Quick Review](http://linuxcommand.org)** - 
 
-**JavaScript Exercises, Practice Questions and Solutions**
-- https://www.geeksforgeeks.org/javascript/practice-javascript-online/  
-Progress: 
+**[JavaScript Exercises, Practice Questions and Solutions](https://www.geeksforgeeks.org/javascript/practice-javascript-online/)** - 
 
 ### 4. NextJS
 
-**NextJS Official Website**
-- https://nextjs.org/docs.  
-Progress: 
+**[NextJS Official Website](https://nextjs.org/docs)** - 
 
-**React Official Website**
-- https://react.dev/reference/react  
-Progress:
+**[React Official Website](https://react.dev/reference/react)** - 
+
+**[Youtube - NestJS full course](https://www.youtube.com/watch?v=MZbwu3-uz3Y)** - 
 
 ### 5. Github
 
-**Youtube Video**
-- https://youtu.be/pJYOG6klqj8?si=nC3dATvEpxedLadS  
-Progress:
+**[Youtube - Github all in One](https://youtu.be/pJYOG6klqj8?si=nC3dATvEpxedLadS)** - 
+
+### 6. English
+
+**[Hello world]()** - 
 

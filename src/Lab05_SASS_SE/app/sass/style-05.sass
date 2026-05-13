@@ -1,0 +1,57 @@
+// Import module from other files
+
+@use 'dark'
+@use 'light' as theme
+
+// Extend/Inheritance
+
+%set-size
+    padding: 10px 20px
+    margin: 10px (0.33 / 2 * 1%)
+
+%set-color
+    background-color: theme.$color-blue
+    color: theme.$font-color
+
+%set-body-color
+    background: theme.$body-color
+
+// Define mixins - functions
+
+@mixin box($top-bottom: 5px, $left-right: 5px)
+    padding: $top-bottom $left-right
+    margin: $top-bottom $left-right
+    box-shadow: 5px 5px 5px rgba(theme.$font-color, 0.25)
+
+*
+    color: theme.$font-color
+
+body
+    @extend %set-body-color
+
+h1
+    background-color: theme.$color-red
+
+div
+    @extend %set-color
+    @extend %set-size
+
+nav
+    div 
+        @include box()
+
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            background-color: theme.$body-color
+            @include box(10px, 10px)
+
+    a
+        background-color: theme.$body-color
+        text-decoration: none
+        display: block
+        @extend %set-size
+

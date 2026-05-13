@@ -1,0 +1,56 @@
+// Import module from other files
+
+@use 'dark'
+@use 'light' as theme
+
+// Extend/Inheritance
+
+// Define mixins
+
+@mixin box($top: 5px, $right: 5px, $bottom: 5px, $left: 5px)
+    margin: $top $right $bottom $left
+    padding: $top $right $bottom $left
+
+// Define functions
+
+@function format-shadow($value)
+    @return ($value $value $value rgba(theme.$font-color, 0.75))
+
+@for $i from 1 through 3
+    li:nth-child(2n + #{$i})
+        @if($i % 2 == 0)
+            background-color: theme.$color-blue
+        @else
+            background-color: theme.$color-red
+
+*
+    color: theme.$font-color
+
+body
+    background-color: theme.$body-color
+
+h1
+    background-color: theme.$color-red
+    box-shadow: format-shadow(10px)
+
+div
+    background-color: theme.$color-blue
+
+nav
+    div 
+        background-color: theme.$color-blue
+        @include box()
+
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            background-color: theme.$body-color
+            @include box(10px, 10px)
+
+    a
+        background-color: theme.$body-color
+        text-decoration: none
+        display: block

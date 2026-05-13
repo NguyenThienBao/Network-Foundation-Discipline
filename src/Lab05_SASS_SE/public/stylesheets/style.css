@@ -1,0 +1,51 @@
+li:nth-child(2n+1) {
+  background-color: #f48fb1;
+}
+
+li:nth-child(2n+2) {
+  background-color: #90caf9;
+}
+
+li:nth-child(2n+3) {
+  background-color: #f48fb1;
+}
+
+* {
+  color: #000000;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  background-color: #f48fb1;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+div {
+  background-color: #90caf9;
+}
+
+nav div {
+  background-color: #90caf9;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  background-color: #ffffff;
+  margin: 10px 10px 5px 5px;
+  padding: 10px 10px 5px 5px;
+}
+nav a {
+  background-color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

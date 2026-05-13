@@ -1,0 +1,36 @@
+// Import module from other files
+
+@use 'dark'
+@use 'light'
+
+*
+    color: dark.$font-color
+
+body
+    background-color: dark.$body-color
+
+h1
+    background-color: dark.$color-red
+
+div
+    background-color: dark.$color-blue
+
+nav
+    div 
+        margin: 20px 0 0 0
+
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            background-color: light.$body-color
+            margin: 5px
+
+    a
+        background-color: light.$body-color
+        text-decoration: none
+        display: block
+        padding: 5px 10px
+

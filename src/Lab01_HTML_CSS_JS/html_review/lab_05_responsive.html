@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponsiveHTML</title>
+    <style type="text/css">
+        :root {
+            --color-red: #eb1d65;
+            --color-yellow: #ffc205;
+            --color-pure: #663bb7;
+            --color-green: #76b947;
+            --color-blue: #3366cc;
+            --color-white: #ffffff;
+            --color-gray: #a5a5a5;
+        }
+
+        .item-1 { background-color: var(--color-red); }
+        .item-2 { background-color: var(--color-blue); }
+        .item-3 { background-color: var(--color-green); }
+
+        div {
+            height: 100%;
+            line-height: 100px;
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        .item-1, .item-2, .item-3 {
+            width: 31%;
+            margin: 10px 1.15%;
+            float: left;
+        }
+
+      
+        @media only screen and (min-width: 1920px) {
+            .item-1, .item-2, .item-3 { width: 31%; }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .item-1 { width: 97.7%; }            
+            .item-2, .item-3 { width: 47.7%; }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .item-1, .item-2, .item-3 { width: 97.7%; }            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item-1">item 1</div>
+    <div class="item-2">item 2</div>
+    <div class="item-3">item 3</div>
+</body>
+</html>

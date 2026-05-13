@@ -1,0 +1,93 @@
+:root {
+    --color-red: #eb1d65;
+    --color-yellow: #ffc205;
+    --color-pure: #663bb7;
+    --color-green: #76b947;
+    --color-blue: #3366cc;
+    --color-white: #ffffff;
+    --color-gray: #a5a5a5;
+    --color-body: #d57e7e;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+#container {
+    background-color: var(--color-body);
+    width: 80%;
+    margin: auto auto 25px auto;
+    color: var(--color-white);
+}
+
+header {
+    background-color: var(--color-blue);
+    min-height: 100px;
+}
+
+nav {
+    background-color: var(--color-green);
+    min-height: 50px;
+    line-height: 50px;
+}
+
+aside {
+    background-color: var(--color-pure);
+    width: 20%;
+    min-height: 200px;
+    float: left;
+}
+
+section {
+    background-color: var(--color-gray);
+    width: 60%;
+    min-height: 800px;
+    float: left;
+}
+
+article {
+    background-color: var(--color-yellow);
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    clear: left;
+    background-color: var(--color-red);
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menu, .sub-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    padding-left: 5px; 
+    margin-bottom: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.menu a:hover { background-color: var(--color-yellow);}
+
+.sub-menu {
+    position: absolute;
+    margin-left: 16%;
+    margin-top: -26px; 
+    width: 100px;
+    background-color: var(--color-red);
+    visibility: hidden;
+}
+
+.menu li:hover .sub-menu {
+    visibility: visible;
+}

@@ -1,0 +1,92 @@
+:root {
+    --color-medium-blue: #b2d6ff;
+    --color-light-blue: #d6e9fe;
+    --color-red: #f09a9d;
+    --color-yellow: #f5cf8e;
+    --color-gray: #a5abb1;
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+    background-color: var(--color-gray);
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 100px;
+    background-color: var(--color-medium-blue);
+}
+
+.content {
+    overflow: scroll;
+    float: left;
+    width: 650px;
+    height: 400px;
+    background-color: var(--color-yellow);
+    padding: 20px;
+}
+
+.sidebar {
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: var(--color-red);
+}
+
+.footer {
+    overflow: scroll;
+    height: 200px;
+    background-color: var(--color-light-blue);
+}
+
+.column {
+    overflow: scroll;
+    float: left;
+    background-color: var(--color-medium-blue);
+    width: 45%;
+    height: 160px;
+    margin: 20px 1.15%;
+}
+
+.article-image {
+    float: left;
+    width: 300px;
+    height: 300px;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+    margin: 0 20px 20px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.avatar {
+    float: left;
+    width: 60px; 
+    height: 60px; 
+    margin: 20px;
+    background-color: var(--color-light-blue);
+    border-radius: 30px;
+}
+
+.username { 
+    margin-top: 15px;
+}
+
+.comment {
+    margin: 0px;
+    overflow: hidden;
+}
+
+

@@ -1,0 +1,194 @@
+$color-green: #1d809f
+$color-green-dark: #17667f
+$color-dark: #343a40
+$color-yellow: #f2b912
+$color-white: #fff
+
+$width-mobile: 576px
+$width-tablet: 768px
+$width-desktop: 1024px
+
+@mixin mobile
+    @media (max-width: #{$width-mobile - 1px})
+        @content
+
+@mixin tablet
+    @media (min-width: #{$width-mobile}) and (max-width: #{$width-desktop - 1px})
+        @content
+
+*
+    font-family: "Source Sans Pro"
+    margin: 0
+    padding: 0
+
+.container
+    display: flex
+    flex-direction: column
+
+section
+    height: 100vh
+
+.content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    row-gap: 1rem
+
+a 
+    text-decoration: none
+
+.row
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    width: 100vw
+    justify-content: space-evenly
+    align-items: center
+
+.cart
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    row-gap: 1rem
+    margin-top: 1rem
+
+    @include tablet
+        width: 50%
+    
+    @include mobile
+        width: 100%
+        margin-top: 0.5rem
+        row-gap: 0.5rem
+
+    i
+        width: 7rem
+        height: 7rem
+        border-radius: 50%
+        background-color: $color-white
+        display: block !important
+        text-align: center
+        line-height: 7rem !important
+        font-size: 2.5rem
+        color: $color-green
+        @include mobile
+            width: 5rem
+            height: 5rem
+            line-height: 5rem !important
+            font-size: 1.5rem
+
+    p
+        color: $color-white
+
+.btn
+  padding: 1.25rem 2rem
+  border-radius: 5px
+
+.btn-green
+  background-color: $color-green-dark
+  color: $color-white
+
+.btn-green:hover
+  background-color: $color-white
+  color: $color-green
+
+.btn-green:active 
+  background-color: $color-green-dark
+  color: $color-white
+
+.btn-black
+  background-color: $color-dark
+  color: $color-white
+
+.btn-black:hover
+  background-color: $color-white
+  color: $color-dark
+  border: 1px solid $color-dark
+  font-weight: bold
+
+.btn-white
+  background-color: $color-white
+  color: $color-dark
+
+.btn-white:hover
+  background-color: $color-dark
+  color: $color-white
+
+h1, h2, h3
+  text-align: center
+
+h1 
+  font-size: 4rem
+  font-weight: 700
+
+h2
+  font-size: 3rem
+  font-weight: 700
+
+h3
+  font-size: 1.5rem
+  font-style: italic
+  font-weight: 400
+
+h4
+  font-size: 2rem
+  color: $color-white
+
+h5
+  font-size: 1rem
+  color: $color-yellow
+  text-transform: uppercase 
+
+// define styles for Section 
+#home
+  background: url(../img/bg-masthead.jpg)
+  background-position: center center
+  background-size: cover
+
+#about
+  background-color: $color-white
+  
+#service
+  background-color: $color-green
+  
+#callout
+  background: url(../img/bg-callout.jpg)
+  background-position: center center
+  background-size: cover
+  background-attachment: fixed
+  
+#portfolio
+  background-color: $color-white
+  
+#action
+  background-color: $color-green
+
+  h2 
+    color: $color-white
+  
+#map
+  background-color: $color-white
+  height: 50vh
+
+  .content
+    height: 50vh
+  
+#footer
+  background-color: $color-green
+  height: 50vh
+
+  .content
+    height: 50vh
+
+    .list
+      height: 50%
+      
+  @include mobile
+    .cart
+      width: auto
+
+  p
+    text-align: center
+    color: $color-white

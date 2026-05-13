@@ -1,0 +1,17 @@
+/* Error: There is no module with the namespace "math".
+ *   ,
+ * 9 |   margin: 10px math.div(0.33, 2 * 1%) //--> Operator
+ *   |                ^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/style05.sass 9:16  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "math".\a   \2577 \a 9 \2502    margin: 10px math.div(0.33, 2 * 1%) //--> Operator\a   \2502                 ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/style05.sass 9:16  root stylesheet';
+}

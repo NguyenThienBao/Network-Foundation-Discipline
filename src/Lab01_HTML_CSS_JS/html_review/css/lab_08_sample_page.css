@@ -1,0 +1,50 @@
+:root {
+    --color-medium-blue: #b2d6ff;
+    --color-light-blue: #d6e9fe;
+    --color-red: #f09a9d;
+    --color-yellow: #f5cf8e;
+    --color-gray: #a5abb1;
+    --color-sage-green: #b8d8be;
+    --color-soft-purple: #cfbaf0;
+    --color-dark-navy: #2c3e50;
+    --color-warm-beige: #f7ede2;
+    --color-deep-teal: #4a7c7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-deep-teal);
+}
+
+.container {
+    overflow: hidden;
+    background-color: var(--color-dark-navy);
+}
+
+aside {
+    float: left;
+    min-width: 200px;
+    width: 20%;
+    height: 600px;
+    background-color: var(--color-soft-purple);
+}
+
+main {
+    float: left;
+    min-width: 600px;
+    width: 80%;
+    height: 600px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-light-blue);
+}

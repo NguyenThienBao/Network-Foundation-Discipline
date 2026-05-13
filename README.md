@@ -20,9 +20,11 @@
 
 **[LinuxCommand.org](http://linuxcommand.org)** - 
 
-### 3. Javascript
+### 3. HTML, CSS, Javascript
 
-**[Youtube - Quick Review](http://linuxcommand.org)** - 
+**[Quick Review](https://github.com/ngdhuy/rmit-web-development-2026.git)** - This is for reference.
+
+**[HTML Elements Reference ](https://www.w3schools.com/tags/)** - This is for seeking detail information of HTML's tags.
 
 **[JavaScript Exercises, Practice Questions and Solutions](https://www.geeksforgeeks.org/javascript/practice-javascript-online/)** - 
 
@@ -32,13 +34,14 @@
 
 **[React Official Website](https://react.dev/reference/react)** - 
 
-**[Youtube - NestJS full course](https://www.youtube.com/watch?v=MZbwu3-uz3Y)** - 
+**[Comprehensive Detail of NextJS](https://youtu.be/b4ba60j_4o8?si=27eOIFrkMa4zh4E-)** - Client and Server Component.
 
-### 5. Github
+### 5. NestJS
+
+### 6. Github
 
 **[Youtube - Github all in One](https://youtu.be/pJYOG6klqj8?si=nC3dATvEpxedLadS)** - 
 
-### 6. English
+### 7. English
 
-**[Hello world]()** - 
-
+**[Hello world](asdsd)** - 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM cont.</title>
+    <style type="text/css">
+        div {
+            border: 1px solid #3366cc;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    Outside of data
+    <div id="data">
+        Inside of Data
+        <h2>Title of Document</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+
+    <button type="button" onClick="getInnerText()">Get Inner Text</button>
+    <button type="button" onClick="getInnerHTML()">Get Inner HTML</button>
+    <button type="button" onClick="getOuterText()">Get Outer Text</button>
+    <button type="button" onClick="getOuterHTML()">Get Outer HTML</button>
+
+    <div id="container">
+
+    <script type="text/javascript">
+        var data_node = document.querySelector('#data');
+        var container_node = document.querySelector('#container');
+
+        function getInnerText() {
+            container_node.innerText = data_node.innerText;
+        }
+
+        function getInnerHTML() {
+            container_node.innerText = data_node.innerHTML;
+        }
+
+        function getOuterText() {
+            container_node.innerText = data_node.outerText;
+        }
+
+        function getOuterHTML() {
+            container_node.innerText = data_node.outerHTML;
+        }
+
+    </script>
+
+    </div>
+</body>
+</html>

@@ -1,2 +1,0 @@
-# Github Basic Training
-

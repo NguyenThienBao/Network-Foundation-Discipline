@@ -16,6 +16,8 @@
 
 **[Youtube - Networking Fundamentals](https://www.reddit.com/r/CompTIA/comments/o5s27p/ten_videos_to_teach_you_networking_free_on_youtube/)** - Lesson 2B - 7 Layers of Network
 
+**[Internet Protocols](https://www.rfc-editor.org)** - use as a Wiki
+
 ### 2. Linux & Bash — Your MAIN source
 
 **[LinuxCommand.org](http://linuxcommand.org)** - 

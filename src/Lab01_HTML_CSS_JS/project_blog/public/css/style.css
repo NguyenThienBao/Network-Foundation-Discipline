@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #595751;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #cacaca;
+}
+
+header {
+  background-color: #ffffff;
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  padding: 2px 20vw;
+}
+header img {
+  width: 125px;
+  height: 150px;
+}
+header .social .social-container {
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+}
+header .social .social-container a i {
+  color: #595751;
+  font-size: 1.5rem;
+}
+header .category .category-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 5px;
+}
+header button {
+  background-color: transparent;
+  border: none;
+  color: #595751;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.content {
+  background-color: #ffffff;
+  margin: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

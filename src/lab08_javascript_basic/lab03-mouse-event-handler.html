@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style type="text/css">
+        .color-red { background-color: rgb(213, 115, 115); }
+        .color-blue { background-color: rgb(115, 161, 213); }
+        .color-green { background-color: rgb(115, 213, 135); }
+        .color-yellow { background-color: rgb(211, 213, 115); }
+        .color-black { background-color: rgb(44, 44, 44); }
+        .color-white { background-color: rgb(237, 237, 237); }
+        .color-gray { background-color: rgb(163, 162, 162); }
+
+        div {
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+            background-color: #caf7e3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event in Button</h1>
+    <button type="button" onClick="document.bgColor='#cc3366'">Click Me</button>
+    <div onclick="mouseClick(this)" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"" ></div>
+
+    <script type="text/javascript">
+        function mouseClick(control) { control.className = 'color-red'; }
+        function mouseOver(control) { control.className = 'color-blue'; }
+        function mouseOut(control) { control.className = 'color-green'; }
+    </script>
+</body>
+</html>

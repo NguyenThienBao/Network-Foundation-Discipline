@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Signup Validator</title>
+    <style>
+    span { color: red; }
+
+    div { margin: 10px; }
+
+    label {
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+    }
+
+    .btn-group { padding-left: 120px; }
+
+    </style>
+</head>
+<body>
+    <h1>Form Signup Validator</h1>
+
+    <form action="#">
+        <div>
+            <label for="us">Username:</label>
+            <input type="text" id="us" name="us">
+            <span id="err-us"></span>
+        </div>
+        <div>
+            <label for="pas">Password:</label>
+            <input type="password" id="pas" name="pas">
+            <span id="err-pas"></span>
+        </div>
+        <div>
+            <label for="conf-pas">Confirm Password:</label>
+            <input type="password" id="conf-pas" name="conf-pas">
+            <span id="err-conf-pas"></span>
+        </div>
+        <div class="btn-group">
+            <button type="submit">Sign-Up</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+
+    <div id="acc-info"></div>
+
+    <script type="text/javascript">
+        document.querySelector('button[type=button]').onClick = function() {
+            let us = document.querySelector('#us');
+            let pw = document.getElementById('pas');
+            let confPw = document.getElementById('conf-pas');
+
+            let errUs = document.getElementById('err-us');
+            let errPw = document.getElementById('err-pas');
+            let errConfPw = document.getElementById('err-conf-pas');
+
+            let accInfo = document.getElementById('acc-info');
+
+            let flagValidator = true;
+
+            // Check username
+            if(us.value.length == 0) {
+                us.focus();
+                errUs.innerText = 'Username is required';
+                flagValidator = false;
+            } else {
+                errUs.innerText = '';
+            }
+
+            // Check password
+            if(pw.value.length == 0) {
+                pw.focus();
+                errPw.innerText = 'Password is required';
+                flagValidator = false;
+            } else if (pw.value.length < 6) {
+                pw.focus();
+                errPw.innerText = 'Password must be at least 6 characters long';
+                flagValidator = false;
+            } else {
+                errPw.innerText = '';
+            }
+
+            // Check confirm password
+            if(confPw.value.length == 0) {
+                confPw.focus();
+                errConfPw.innerText = 'Please confirm your password';
+                flagValidator = false;
+            } else if (pw.value !== confPw.value) {
+                confPw.focus();
+                errConfPw.innerText = 'Retyped password does not match with the original password';
+                flagValidator = false;
+            } else {
+                errConfPw.innerText = '';
+            }
+
+            // Show account information when all fields are validdate say yes
+            if(flagValidator) {
+                let h_node = document.createElement('h1');
+                let h_text = document.createTextNode('Account Information');
+                h_node.appendChild(h_text);
+                accInfo.appendChild(h_node);
+
+                let ul_node = document.createElement('ul');
+                accInfo.appendChild(ul_node);
+
+                let li_us_node = document.createElement('li');
+                let li_us_text = document.createTextNode(`Username: ${us.value}`);
+                li_us_node.appendChild(li_us_text);
+                ul_node.appendChild(li_us_node);
+
+                let li_pw_node = document.createElement('li');
+                let li_pw_text = document.createTextNode(`Password: ${pw.value}`);
+                li_pw_node.appendChild(li_pw_text);
+                ul_node.appendChild(li_pw_node);
+            } else {
+                accInfo.innerText = '';
+            }
+
+        }
+    </script>
+</body>
+</html>

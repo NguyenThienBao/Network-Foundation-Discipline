@@ -24,34 +24,42 @@
                 <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button className="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
+        <div class="search-container">
+                <button className="close-search"><i class="fa-solid fa-x"></i></button>
+                <input type="text" placeholder="Search..." /> 
+                <button className="input"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
     </header>
-    
+
     <div class="content">
         <div class="content-container">
             <div class="list-container">
-                <div class="item-container">
+                <!-- <div class="item-container">
                     <h1 class="post-title">Camping Núi Dinh</h1>
                     <h5 class="post-publish">PUBLISHED MARCH 18, 2020 BY VINH, BAO</h5>
-                    <img src="" />
+                    <img src="./img/mountain.jpg" />
                     <p>Last summer, my friends and I packed our gear and headed into the mountains for a weekend getaway. Pitching our tents just before sunset, we quickly gathered dry branches to build a crackling campfire. Sitting under a brilliant canopy of stars, we roasted marshmallows and shared stories. Disconnecting from the city and waking up to the fresh morning air was incredibly rejuvenating.</p>
                     <button>READ MORE</button>
-                </div>
+                </div> -->
             </div>
-        </div>
-        <div class="pagination-container">
-            <button>Previous</button>
-            <button>1</button>
-            <button>2</button>
-            <p>...</p>
-            <button>24</button>
-            <button>Next</button>
+            <div class="pagination-container">
+                <button>Previous</button>
+                <button>1</button>
+                <button>2</button>
+                <p>...</p>
+                <button>24</button>
+                <button>Next</button>
+            </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2023 Camping Blog. All rights reserved.</p>
     </footer>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
 </body>
 </html>

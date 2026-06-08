@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <style type="text/css">
+        #err { color: red}
+    </style>"
+</head>
+<body>
+    <h1>Form Validator</h1>
+    <form action="https://www.google.com/search" method="get">
+        <div>
+            <span> Keyword: </span>
+            <input type="text" id="q" name="q">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <div id="err"></div>
+
+    <script type="text/javascript">
+        document.querySelector('form').onsubmit = function() {
+            let text_field = document.querySelector('#q');
+            let text_error = document.querySelector('#err');
+
+            if(text_field.value.length === 0) {
+                text_field.focus();
+                text_error.innerHTML = 'Keyword is required';
+                return false;
+            } else {
+                text_error.innerHTML = '';
+                return true;
+            }
+        }
+
+    </script>
+        
+</body>
+</html>

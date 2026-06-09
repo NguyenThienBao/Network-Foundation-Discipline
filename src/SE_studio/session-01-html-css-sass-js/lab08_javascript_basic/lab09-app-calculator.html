@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator application</title>
+    <style type="text/css">
+        h1 { text-align: center; color: #cc3366; }
+
+        .container {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 16.75rem;
+        }
+
+        #screen {
+            border: 1px solid #5d5a5a;
+            width: 16rem;
+            height: 2rem;
+            line-height: 2rem;
+            color: #000000;
+            text-align: right;
+            padding: 0 10px;
+            font-size: 1.25rem;
+        }
+
+        .btn {
+            height: 2rem;
+            width: 4rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .btn-list { margin: 5px 0; }
+
+        .btn-ac, .btn-sign, .btn-percent { background-color: rgb(97, 94, 94, 0.3); }
+        .btn-div, .btn-mul, .btn-sub, .btn-plus { background-color: rgba(230, 180, 101, 0.5); }
+        .btn-calc { background-color: rgba(106, 142, 209, 0.5); width: 8.25rem; }
+    </style>
+</head>
+<body>
+    <h1>Calculator application</h1>
+    
+    <div class="container">
+        <div id="screen">0.</div>
+        <div class="btn-list">
+            <button type="button" class="btn btn-ac">AC</button>
+            <button type="button" class="btn btn-sign">+/-</button>
+            <button type="button" class="btn btn-percent">%</button>
+            <button type="button" class="btn btn-div">/</button>
+            <button type="button" class="btn btn-num-7">7</button>
+            <button type="button" class="btn btn-num-8">8</button>
+            <button type="button" class="btn btn-num-9">9</button>
+            <button type="button" class="btn btn-mul">*</button>
+            <button type="button" class="btn btn-num-4">4</button>
+            <button type="button" class="btn btn-num-5">5</button>
+            <button type="button" class="btn btn-num-6">6</button>
+            <button type="button" class="btn btn-sub">-</button>
+            <button type="button" class="btn btn-num-1">1</button>
+            <button type="button" class="btn btn-num-2">2</button>
+            <button type="button" class="btn btn-num-3">3</button>
+            <button type="button" class="btn btn-plus">+</button>
+            <button type="button" class="btn btn-num-0">0</button>
+            <button type="button" class="btn btn-dot">.</button>
+            <button type="button" class="btn btn-calc">=</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        let value = '0'; 
+        let memory = '0'; 
+        let operator = null; 
+        let is_dot = false
+        let is_calc = false; 
+        let is_new = true; 
+        let value_screen = document.querySelector('#screen');
+
+        document.querySelector('.btn-num-0').addEventListener('click', add_number);
+        document.querySelector('.btn-num-1').addEventListener('click', add_number);
+        document.querySelector('.btn-num-2').addEventListener('click', add_number);
+        document.querySelector('.btn-num-3').addEventListener('click', add_number);
+        document.querySelector('.btn-num-4').addEventListener('click', add_number);
+        document.querySelector('.btn-num-5').addEventListener('click', add_number);
+        document.querySelector('.btn-num-6').addEventListener('click', add_number);
+        document.querySelector('.btn-num-7').addEventListener('click', add_number);
+        document.querySelector('.btn-num-8').addEventListener('click', add_number);
+        document.querySelector('.btn-num-9').addEventListener('click', add_number);
+
+        document.querySelector('.btn-dot').addEventListener('click', set_dot);
+        document.querySelector('.btn-ac').addEventListener('click', clear);
+        document.querySelector('.btn-sign').addEventListener('click', set_sign);
+
+        document.querySelector('.btn-plus').addEventListener('click', cal_operator);
+        document.querySelector('.btn-sub').addEventListener('click', cal_operator);
+        document.querySelector('.btn-mul').addEventListener('click', cal_operator);
+        document.querySelector('.btn-div').addEventListener('click', cal_operator);
+
+        document.querySelector('.btn-percent').addEventListener('click', cal_percent);
+        
+        document.querySelector('.btn-calc').addEventListener('click', cal_total);
+
+        function clear() {
+            memory = '0'; 
+            value = '0';
+            is_dot = false; 
+            is_calc = false; 
+            is_new = true; 
+
+            value_screen.innerText = '0.';
+        }
+
+        function add_number() {
+            if(is_calc)
+                clear();
+
+            let num_value = this.innerText;
+            
+            if(value === '0') {
+                value = num_value;
+            } else {
+                value = value + num_value;
+            }
+            
+            value_screen.innerText = value + (!is_dot ? '.' : '');
+        }
+
+        function set_dot() {
+            if(is_dot == false) {
+                value += '.';
+                is_dot = true;
+            }
+        }
+
+        function set_sign() {
+            if(value != '0') {
+                value = (value[0] != '-') ? '-' + value : value.replace('-','');
+            }
+
+            value_screen.innerText = value + (!is_dot ? '.' : '');
+        }
+
+        function cal_operator() {
+            if(is_calc) {
+                is_calc = false;
+            } else if (!is_new) {
+                calculate();
+            } else {
+                is_new = false;
+            }
+
+            value_screen.innerText = value + (!is_dot ? '.' : '');
+
+            if(value != 'Error div 0') {
+                memory = value; 
+                operator = this.innerText;
+                value = '0';
+            }
+        }
+
+        function calculate() {
+            let value_memory = parseFloat(memory);
+            let value_current = parseFloat(value);
+
+            let result = 0;
+
+            switch(operator) {
+                case '+':
+                    result = value_memory + value_current;
+                    break;
+                case '-':
+                    result = value_memory - value_current;
+                    break;
+                case '*':
+                    result = value_memory * value_current;
+                    break;
+                case '/':
+                    if(value_current === 0)
+                        result = 'Error div 0';
+                    else
+                        result = value_memory / value_current;
+                    break;
+            }
+
+            value = result.toString();
+
+            if(parseFloat(value) > parseInt(value))
+                is_dot = true;
+        }
+
+        function cal_total() {
+            calculate(); 
+            value_screen.innerText = value + (!is_dot ? '.' : '');
+            is_calc = true;
+        }
+
+        function cal_percent() {
+            value = parseFloat(value) / 100;
+            
+            if(parseFloat(value) > parseInt(value))
+                is_dot = true;
+
+            value_screen.innerText = value + (!is_dot ? '.' : '');
+            is_calc = true;
+        }
+    </script>
+</body>
+</html>

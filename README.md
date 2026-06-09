@@ -18,6 +18,8 @@
 
 **[Internet Protocols](https://www.rfc-editor.org)** - use as a Wiki
 
+**[BSCP certificate for Website Security](https://a3h1nt.github.io/2024/04/15/Burp-Suite-Certified-Practitioner-Review.html)**
+
 ### 2. Linux & Bash — Your MAIN source
 
 **[LinuxCommand.org](http://linuxcommand.org)** - 
@@ -47,3 +49,11 @@
 ### 7. English
 
 **[Hello world](asdsd)** - 
+
+### 8. AI - Claude
+
+**[Basic Claude](https://anthropic.skilljar.com/claude-101)**
+
+**[Advanced Claude](https://anthropic.skilljar.com/ai-fluency-framework-foundations)**
+
+**[Cowork feature for Claude](https://anthropic.skilljar.com/introduction-to-claude-cowork)**

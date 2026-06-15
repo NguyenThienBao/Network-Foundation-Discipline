@@ -57,3 +57,31 @@
 **[Advanced Claude](https://anthropic.skilljar.com/ai-fluency-framework-foundations)**
 
 **[Cowork feature for Claude](https://anthropic.skilljar.com/introduction-to-claude-cowork)**
+
+### 9. AI - Math
+
+**[If you are lost go here](https://mml-book.github.io)**
+
+**[Begin with your EYES here](https://www.youtube.com/@3blue1brown)**
+
+#### Phase 1
+
+**[Algebraic Intuition - Pre Algebra](https://openstax.org/details/books/prealgebra-2e)** 
+
+**[Algebraic Intuition - College Algebra](https://archive.org/details/collegealgebra00blit_0)**
+
+**[Algebraic Intuition - Exercise / Challenges](https://artofproblemsolving.com/store?srsltid=AfmBOopQkhVMwLvfrc3LWJ5Zg8lcWw4M67uU5s-1oy1YvkoZVVbgD67j)**
+
+**[Geometry and Trigonometry - Geometry](https://archive.org/details/geometry00jaco/page/n9/mode/2up)**
+
+**[Geometry and Trigonometry - Trigonometry / Pre-Calculus](https://openstax.org/details/books/precalculus-2e)**
+
+##### Phase 2
+
+**[Probability and Statistics](https://stat110.hsites.harvard.edu)**
+
+**[Calculus and Linear Algebra](https://mml-book.github.io)**
+
+**[Linear Algebra - Book](https://www.reddit.com/r/learnmachinelearning/comments/fva96k/linear_algebra_done_right_by_sheldon_axler_now/)**
+
+##### [Further Reading - Discrete Mathematics and Its Applications](https://cis.temple.edu/~latecki/Courses/CIS2166-Fall25/RosenDiscreteMath8Ed.pdf)

@@ -3,6 +3,8 @@ import React from 'react'
 
 // import project components
 import Header from './components/Header'
+import Footer from './components/Footer'
+import Clock from './components/Clock'
 
 // import css file
 import './App.css'
@@ -14,6 +16,8 @@ const App : React.FC = () => {
   return (
     <>
       <Header title="this is the title of the Header Component"/>
+      <Footer message="This is the message in Footer" />
+      <Clock state={Date.now}/>
     </>
   )
 }

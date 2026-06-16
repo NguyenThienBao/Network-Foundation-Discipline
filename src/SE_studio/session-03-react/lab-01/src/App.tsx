@@ -2,6 +2,7 @@
 import React from 'react'
 
 // import project components
+import Header from './components/Header'
 
 // import css file
 import './App.css'
@@ -12,7 +13,7 @@ const App : React.FC = () => {
   // function component 
   return (
     <>
-      <h1> Hello World </h1>
+      <Header title="this is the title of the Header Component"/>
     </>
   )
 }

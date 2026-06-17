@@ -36,7 +36,7 @@ export default class Clock extends React.Component<Type> {
         this.setState({ date: new Date })
     }
 
-    public render() : ReactNode {
+    public render() : React.ReactNode {
         return (
             <div className="clock">
                 Now is <span> {this.state.date.toLocaleTimeString()} </span>

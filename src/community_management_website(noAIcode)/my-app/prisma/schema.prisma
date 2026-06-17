@@ -135,6 +135,7 @@ model LedgerEntry {
   auditLog          AuditTransactionLog? // Filled ONLY if IN is via Agentic OCR
 
   @@map("ledger_entries")
+  @@index([playerId, created_at])
 }
 
 model ManualAdjustment {

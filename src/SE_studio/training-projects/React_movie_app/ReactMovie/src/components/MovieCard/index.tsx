@@ -1,9 +1,11 @@
 import React from 'react'
+import "../../css/MovieCard.css"
 
 export type Movie = {
     title? : string,
     url? : string, 
-    release_date? : string 
+    release_date? : string
+    poster_path? : any
 }
 
 type MovieProps = { 
@@ -23,7 +25,7 @@ class MovieCard extends React.Component<MovieProps> {
         return (
             <div className='movie-card'>
                 <div className='movie-poster'>
-                    <img src={this.props.movie.url} alt={this.props.movie.title}/>
+                    <img src={`https://image.tmdb.org/t/p/w500${this.props.movie.poster_path}`} alt={this.props.movie.title}/>
                     <div className='movie-overlay'>
                         <button className="favorite-btn" onClick={this.onFavoriteClick}></button>
                     </div>

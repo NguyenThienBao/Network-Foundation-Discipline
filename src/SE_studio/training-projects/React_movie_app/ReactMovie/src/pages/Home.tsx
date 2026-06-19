@@ -1,14 +1,11 @@
 import MovieCard from "../components/MovieCard"
-import {useState} from "react"
+import {useState, useEffect} from "react"
+import {getPopularMovies, searchMovies} from '../services'
 
 export default function Home () {
     const [searchQuery, setSearchQuery] = useState("");
 
-    const movies = [
-        {id: 1, title: "John Wick", release_date: "2020"},
-        {id: 2, title: "Terminator", release_date: "2019"},
-        {id: 3, title: "Alien", release_date: "2022"}
-    ]
+    
 
     const handleSearch = (e : React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault()

@@ -2,6 +2,7 @@ import React from 'react'
 import "../../css/MovieCard.css"
 
 export type Movie = {
+    id : string
     title? : string,
     url? : string, 
     release_date? : string

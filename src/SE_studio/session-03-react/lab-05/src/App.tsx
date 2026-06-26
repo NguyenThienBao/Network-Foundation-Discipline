@@ -1,9 +1,15 @@
+import type React from 'react'
 import './App.css'
+import FilterableProductTable from './components/FilterableProductTable'
+import data from './data/data.json'
+import { Product } from './model/Product'
 
-function App() {
+const products : Product[] = data.map(item => new Product(item.category, item.price, item.stocked, item.name))
 
+const App : React.FC = () => {
   return (
     <>
+      <FilterableProductTable products={products} />
     </>
   )
 }

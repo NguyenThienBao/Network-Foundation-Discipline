@@ -1,0 +1,46 @@
+:root {
+    --color-pure: #a084cf;
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-blue: #3ab0ff;
+    --color-green: #bdf2d5;
+}
+
+
+ul.nav {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    background-color: var(--color-pure);
+    color: var(--color-white);
+}
+
+ul.nav li {
+    display: inline-block;
+    padding: 0; 
+    margin: 0;
+}
+
+ul.nav li:hover {
+    background-color: var(--color-blue);
+}
+
+ul.nav li:active {
+    background-color: var(--color-green);
+}
+
+ul.nav li a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-white);
+    height: 35px;
+    line-height: 35px;
+    min-width: 71px;
+    margin: 0 10px;
+}
+
+
+ul.nav li:active a {
+    color: var(--color-black);
+    font-style: italic;
+}

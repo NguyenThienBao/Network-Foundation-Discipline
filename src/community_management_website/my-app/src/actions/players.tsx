@@ -124,7 +124,7 @@ export async function getPlayers(filters: PlayerFilters = {}) {
     const queryWhere: any = {};
 
     if (filters.name) queryWhere.name = { contains: filters.name, mode: "insensitive" };
-    if (filters.paymentCode) { queryWhere.unique_payment_code = filters.paymentCode; }
+    if (filters.paymentCode) queryWhere.paymentCode = filters.paymentCode;
     if (filters.team) queryWhere.team = filters.team;
     if (filters.is_active !== undefined) queryWhere.is_active = filters.is_active;
 
